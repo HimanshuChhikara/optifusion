@@ -15,7 +15,7 @@ const TatvaTechSolutions = () => {
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
-          
+
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(section);
           }
@@ -38,34 +38,29 @@ const TatvaTechSolutions = () => {
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Software Development",
-      description: "Custom software solutions tailored to your business needs with cutting-edge technologies."
+      title: "Startup team",
+      description: "Agile startup team with a strong vision to scale into an enterprise-level IT provider."
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Web Development",
-      description: "Responsive and scalable web applications built with modern frameworks and best practices."
+      title: "GOvernment & PSU Projects",
+      description: "Focused on executing government and PSU IT projects through the GeM portal."
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile Applications",
-      description: "Native and cross-platform mobile apps that deliver exceptional user experiences."
+      title: "IT Services",
+      description: "Combination of IT services and a proprietary time management app for added value."
     },
     {
       icon: <Server className="w-8 h-8" />,
-      title: "Infrastructure Solutions",
-      description: "Robust IT infrastructure designed to support your growing business requirements."
+      title: "Hardware & Networking",
+      description: "Partnerships with top OEMs like HPE, Dell, and Cisco for trusted, high-quality solutions."
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Database Management",
-      description: "Secure and efficient database solutions for optimal data storage and retrieval."
+      title: "Cost-Effective Solutions",
+      description: "Competitive pricing strategy aligned with GeM’s L1 bidder model and smart negotiation."
     },
-    {
-      icon: <Cloud className="w-8 h-8" />,
-      title: "Cloud Services",
-      description: "Scalable cloud solutions that enhance flexibility and reduce operational costs."
-    }
   ];
 
   const solutions = [
@@ -86,12 +81,6 @@ const TatvaTechSolutions = () => {
     }
   ];
 
-  const stats = [
-    { icon: <Users className="w-8 h-8" />, number: "500+", label: "Happy Clients" },
-    { icon: <Award className="w-8 h-8" />, number: "1000+", label: "Projects Completed" },
-    { icon: <Zap className="w-8 h-8" />, number: "15+", label: "Years Experience" },
-    { icon: <Shield className="w-8 h-8" />, number: "99.9%", label: "Uptime Guarantee" }
-  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -104,7 +93,7 @@ const TatvaTechSolutions = () => {
                 Tatva<span className="text-gray-800">Tech</span>
               </div>
             </div>
-            
+
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 {[
@@ -117,11 +106,10 @@ const TatvaTechSolutions = () => {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`px-3 py-2 text-sm font-medium transition-colors ${
-                      activeSection === item.id
-                        ? 'text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-700 hover:text-blue-600'
-                    }`}
+                    className={`px-3 py-2 text-sm font-medium transition-colors ${activeSection === item.id
+                      ? 'text-blue-600 border-b-2 border-blue-600'
+                      : 'text-gray-700 hover:text-blue-600'
+                      }`}
                   >
                     {item.label}
                   </button>
@@ -173,18 +161,18 @@ const TatvaTechSolutions = () => {
                 Solution for <span className="text-blue-600">Large & Small</span> Businesses
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Tailored hardware and software solutions to meet the demands of your growing business. 
+                Tailored hardware and software solutions to meet the demands of your growing business.
                 We deliver exceptional IT-enabled solutions with our versatile team of professionals.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button 
+                <button
                   onClick={() => scrollToSection('services')}
                   className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center group"
                 >
                   Explore Services
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button 
+                <button
                   onClick={() => scrollToSection('contact')}
                   className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
                 >
@@ -223,40 +211,37 @@ const TatvaTechSolutions = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              About TatvaTech Solutions
+              About Optifusion IT Solutions Pvt. Ltd.
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We take pride in our versatile team of professionals, each equipped with unique skills 
-              that collectively contribute to delivering exceptional IT-enabled solutions.
+              Optifusion IT Solutions Pvt. Ltd. is a tech-driven
+              startup offering end-to-end IT services, including
+              strategy, hardware/software solutions, networking,
+              and support. We specialize in executing government
+              and PSU projects through the GeM portal, backed by
+              partnerships with top OEMs like HPE, Dell, and Cisco.
+              Focused on innovation, reliability, and scalability, we
+              deliver high-performance solutions tailored to client
+              needs. Our core values—innovation, integrity,
+              excellence, and empowerment—drive our mission to
+              enable digital transformation and create new
+              opportunities in the IT sector.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center p-6 rounded-xl hover:bg-blue-50 transition-colors group">
-                <div className="text-blue-600 mb-4 flex justify-center group-hover:scale-110 transition-transform">
-                  {stat.icon}
-                </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
-            ))}
           </div>
 
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 lg:p-12">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
-                  Why Choose TatvaTech?
+                  Why Choose Optifusion IT Solutions Pvt. Ltd.?
                 </h3>
                 <ul className="space-y-4">
                   {[
-                    "Expert team with diverse technical skills",
-                    "Proven track record of successful projects",
-                    "Agile development methodologies",
+                    "Partnering with top OEMs (e.g.HPE, Dell, Cisco to offer trusted,Make in India - compliant solutions.",
+                    "Launching with a lean, scalable model focused on government and PSU IT projects via the GeM portal",
+                    "Offering a user-friendly time management app to improve productivity and workflow efficiency.",
                     "24/7 technical support and maintenance",
-                    "Cost-effective solutions for all business sizes",
-                    "Latest technology stack and best practices"
+                    "Providing cost-effective,customized IT services in hardware, networking, software, and AMC.",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <ChevronRight className="w-5 h-5 text-blue-600 mr-3 mt-0.5" />
@@ -268,12 +253,12 @@ const TatvaTechSolutions = () => {
               <div className="bg-white rounded-xl p-8 shadow-lg">
                 <h4 className="text-xl font-semibold text-gray-900 mb-4">Our Mission</h4>
                 <p className="text-gray-600 mb-6">
-                  To empower businesses with innovative technology solutions that drive growth, 
+                  To empower businesses with innovative technology solutions that drive growth,
                   enhance efficiency, and create lasting competitive advantages in the digital age.
                 </p>
                 <h4 className="text-xl font-semibold text-gray-900 mb-4">Our Vision</h4>
                 <p className="text-gray-600">
-                  To be the leading technology partner for businesses worldwide, known for our 
+                  To be the leading technology partner for businesses worldwide, known for our
                   exceptional service quality and innovative solutions.
                 </p>
               </div>
@@ -287,7 +272,7 @@ const TatvaTechSolutions = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Services
+              Unique Selling points
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive IT solutions designed to meet the unique challenges of your business
@@ -367,21 +352,22 @@ const TatvaTechSolutions = () => {
                   <Phone className="w-6 h-6 mr-4 text-blue-200" />
                   <div>
                     <div className="font-semibold">Phone</div>
-                    <div className="text-blue-100">+1 (555) 123-4567</div>
+                    <div className="text-blue-100">9871727319</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-4 text-blue-200" />
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-blue-100">info@tatvatechsol.com</div>
+                    <div className="text-blue-100">shalusharma543@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-6 h-6 mr-4 text-blue-200" />
                   <div>
                     <div className="font-semibold">Address</div>
-                    <div className="text-blue-100">123 Tech Street, Innovation City, IC 12345</div>
+                    <div className="text-blue-100">KH NO 256, Plot No. 6A, Raj Associates
+                      Chaprola, Ghaziabad, UP – 201009</div>
                   </div>
                 </div>
               </div>
@@ -431,11 +417,10 @@ const TatvaTechSolutions = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="col-span-2">
               <div className="text-2xl font-bold text-blue-400 mb-4">
-                TatvaTech Solutions
+                Optifusion IT Solutions Pvt. Ltd.
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Your trusted technology partner for innovative IT solutions. 
-                We help businesses grow and succeed in the digital age.
+                Empowering IT innovation for a Smarter Tomorrow.
               </p>
               <div className="flex space-x-4">
                 <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors cursor-pointer">
@@ -454,7 +439,7 @@ const TatvaTechSolutions = () => {
               <ul className="space-y-2">
                 {['Home', 'About', 'Services', 'Solutions', 'Contact'].map(item => (
                   <li key={item}>
-                    <button 
+                    <button
                       onClick={() => scrollToSection(item.toLowerCase())}
                       className="text-gray-400 hover:text-white transition-colors"
                     >
@@ -476,7 +461,7 @@ const TatvaTechSolutions = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 TatvaTech Solutions. All rights reserved.</p>
+            <p>&copy; 2025 Optifusion IT Solutions Pvt. Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
