@@ -90,7 +90,7 @@ const TatvaTechSolutions = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="text-2xl font-bold text-blue-600">
-                Tatva<span className="text-gray-800">Tech</span>
+                Optifusion<span className="text-gray-800"></span>
               </div>
             </div>
 
