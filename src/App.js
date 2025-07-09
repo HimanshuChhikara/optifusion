@@ -43,7 +43,7 @@ const TatvaTechSolutions = () => {
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "GOvernment & PSU Projects",
+      title: "Government & PSU Projects",
       description: "Focused on executing government and PSU IT projects through the GeM portal."
     },
     {
@@ -178,28 +178,6 @@ const TatvaTechSolutions = () => {
                 >
                   Get Quote
                 </button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">500+</div>
-                    <div className="text-blue-100">Projects</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">15+</div>
-                    <div className="text-blue-100">Years</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">24/7</div>
-                    <div className="text-blue-100">Support</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold mb-2">99%</div>
-                    <div className="text-blue-100">Uptime</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -352,14 +330,14 @@ const TatvaTechSolutions = () => {
                   <Phone className="w-6 h-6 mr-4 text-blue-200" />
                   <div>
                     <div className="font-semibold">Phone</div>
-                    <div className="text-blue-100">9871727319</div>
+                    <div className="text-blue-100">9599792789</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 mr-4 text-blue-200" />
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-blue-100">shalusharma543@gmail.com</div>
+                    <div className="text-blue-100">Director@optifusionit.in</div>
                   </div>
                 </div>
                 <div className="flex items-center">
